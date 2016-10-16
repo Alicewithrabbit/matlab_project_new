@@ -1,14 +1,15 @@
 function [h,X] = kafang(V)
-%均匀性检验函数
 %
+%均匀性检验函数
+%卡方检验: X^2 = (N/k - Ni)/(N/k)
 %
 
-[m,n] = size(V);
+n = size(V);
 
 k = 10;
 
 Ni = zeros(1,k);%各区间点数记录MATRIX
-N = n;%所有点个数
+N = n(2);%所有点个数
 
 for i = 1:N
     
