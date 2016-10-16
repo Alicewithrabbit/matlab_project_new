@@ -5,7 +5,7 @@ clear;clc;
 %release date:16/10/6
 %email:imroxaswc@gmail.com
 
-sigma = sqrt(0.1);
+sigma = sqrt(1);
 v = normrnd(0,sigma,16);
 
 n = 4;

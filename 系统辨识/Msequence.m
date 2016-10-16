@@ -32,4 +32,15 @@ xlabel('t');ylabel('a');
 title('四移位寄存器反馈产生的幅值为0.5，步长0.6的M序列');
 axis([1 20 -0.6 0.6])
 
+y = Average(3*N,t);
+
+d = Different(y,3*N,t);
+
+
+
+[f,x] = ksdensity(t);
+figure(2)
+plot(x,f);
+xlabel('x'),ylabel('f');
+title('随机序列的分布图')
     

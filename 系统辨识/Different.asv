@@ -1,0 +1,15 @@
+function y = Different(E,N,V)
+
+
+for i = 1:1:N
+    
+    y=
+    
+    
+    
+end
+
+
+
+
+end
