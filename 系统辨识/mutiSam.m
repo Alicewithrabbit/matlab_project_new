@@ -23,12 +23,13 @@ y = Average(N,v);
 d = Different(y,N,v);
 
 [h,X] = kafang(v);
+[h1,X1] = duli(v);
 
 [f,t] = ksdensity(v);
 figure(2)
 plot(t,f);
 xlabel('x'),ylabel('f');
-title('随机序列的分布图')
+title('随机序列的概率密度图')
 
 
 

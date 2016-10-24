@@ -4,7 +4,7 @@ clear;clc;
 %@author:alicewithrabbit
 %release date:16/10/6
 %email:imroxaswc@gmail.com
-sigma = sqrt(0.1);
+sigma = sqrt(0.5);
 v = normrnd(0,sigma,16);
 
 n = 4;
@@ -15,6 +15,7 @@ u = Mfunction(y,n,a,delta);
 
 figure(1);
 stem(u),grid on
+title('输入信号M序列')
 
 %增广递推最小二乘辨识
 z(2) = 0;z(1) = 0;
@@ -42,6 +43,7 @@ end%循环结束
 i = 1:60;    
 figure(2);
 plot(i,z)
+title('输出观测值')
 figure(3)
 plot(i,a1,'r',i,a2,'b',i,b1,'k',i,b2,'y',i,c1,'g',i,c2,'c',i,c3,'m')%画出各个被辨识参数
 title('增广递推最小二乘辨识方法')%标题

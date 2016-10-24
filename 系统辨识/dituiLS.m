@@ -5,7 +5,7 @@ clear;clc;
 %release date:16/10/6
 %email:imroxaswc@gmail.com
 
-sigma = sqrt(1);
+sigma = sqrt(0.5);
 v = normrnd(0,sigma,16);
 
 n = 4;
@@ -16,6 +16,7 @@ u = Mfunction(y,n,a,delta);
 
 figure(1);
 stem(u),grid on
+title('输入信号M序列')
 
 % 递推最小二乘辨识程序
 z(2) = 0;z(1) = 0;
